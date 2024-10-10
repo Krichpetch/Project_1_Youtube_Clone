@@ -18,7 +18,21 @@ final textTime = GoogleFonts.notoSansImperialAramaic( fontSize: 12, color: textS
 final textButton = GoogleFonts.notoSansImperialAramaic( fontSize: 12, color: textPrimary, fontWeight: FontWeight.w500);
 final textNavbar = GoogleFonts.notoSansImperialAramaic( fontSize: 10, color: textPrimary, fontWeight: FontWeight.w300);
 final textFilter = GoogleFonts.notoSansImperialAramaic( fontSize: 14, color: textPrimary, fontWeight: FontWeight.w500);
+
 final textCover = GoogleFonts.notoSansImperialAramaic( fontSize: 14, color: textPrimary, fontWeight: FontWeight.w600, height: 1.2,);
+final textBigCover = GoogleFonts.notoSansImperialAramaic( fontSize: 16, color: textPrimary, fontWeight: FontWeight.w800, height: 1.3,);
+final textBigCoverSubtitle = GoogleFonts.notoSansImperialAramaic( fontSize: 14, color: textSecondary, fontWeight: FontWeight.w300, height: 1.1, );
+
+final textPlaylistTitle = GoogleFonts.notoSansImperialAramaic( fontSize: 19, color: textPrimary, fontWeight: FontWeight.w800, height: 1.3,);
+final textPlaylistSubtitle = GoogleFonts.notoSansImperialAramaic( fontSize: 12, color: textSecondary, fontWeight: FontWeight.w300, height: 1.1, );
+final textPlaylistTileTitle = GoogleFonts.notoSansImperialAramaic( fontSize: 15, color: textPrimary, fontWeight: FontWeight.w300, height: 1.2, );
+final textPlaylistTileSubtitle = GoogleFonts.notoSansImperialAramaic( fontSize: 14, color: textSecondary, fontWeight: FontWeight.w300, height: 1.2, );
+
+
+
+//profile image
+const String userProfileImage = 'assets/images/Suisei.jpg';
+
 // <palette>
 //   <color name="Air superiority blue" hex="78A4C1" r="120" g="164" b="193" />
 //   <color name="Light cyan" hex="C6EDF2" r="198" g="237" b="242" />

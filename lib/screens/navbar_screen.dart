@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import 'profile_screen.dart';
 import '../screens/blank _screen.dart';
 import '../screens/sample_screen.dart';
 import '../screens/youtube_music.dart';
+import '../screens/playlist_screen.dart';
 import '../constant/constant.dart';
 import '../screens/New_Nav.dart';
-import '../screens/video_player_screen.dart';
-import '../screens/video_playert_test.dart';
 
 
 class NavbarScreen extends StatelessWidget {
@@ -62,9 +60,8 @@ class NavigationController extends GetxController {
   final Rx<int> selectedIndex = 0.obs;
 
   final screens = [
-    const BlankScreen(),
-    const YouTubeMusicHome(),
     const DynamicAppbar(),
-    const MusicVideoPlayerPageTest(),
+    const YouTubeMusicHome(),
+    const PlaylistPage(playlistName: "Secret Love Songs",playlistCover: "Playlist_01",playlistDescription: "This is a short Description of what the playlist is",updateDate: "11 October 2024",uploader: "Krichpetch Sintanakul",),
   ];
 }

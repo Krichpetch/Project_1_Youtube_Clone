@@ -69,11 +69,11 @@ flutter:
   assets:
     - assets/images/
     - assets/icons/
-    - assets/videos/
     - assets/covers/
     - assets/videos/01_Bruno_Mars-Thats_What_I_Like.mp4
     - assets/videos/02_Ice_Saranyu-Khon_Man_Rak.mp4
     - assets/videos/03_Stephen_Sanchez-Until_I_Found_You.mp4
+    - assets/videos/04_Hoshimachi_Suisei-Moonlight.mp4
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

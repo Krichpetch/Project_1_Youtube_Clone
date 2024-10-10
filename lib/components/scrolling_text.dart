@@ -45,7 +45,7 @@ class _ScrollingTextState extends State<ScrollingText>
     )..layout();
 
     // Determine if scrolling is necessary
-    bool shouldScroll = textPainter.width > screenWidth;
+    bool shouldScroll = textPainter.width + 30 >= screenWidth;
 
     return ClipRect(
       child: shouldScroll

@@ -33,7 +33,6 @@ class OtherControlButtons extends StatelessWidget {
   }
 }
 
-
 class PlayPauseButton extends StatelessWidget {
   final bool isPlaying;
   final VoidCallback onPressed;
@@ -66,10 +65,52 @@ class PlayPauseButton extends StatelessWidget {
             child: IconButton(
               key: ValueKey<bool>(isPlaying),
               icon: isPlaying
-                  ? const Icon(Icons.pause_sharp, color: themePrimary, size: 40.0)
-                  : const Icon(Icons.play_arrow, color: themePrimary, size: 40.0),
+                  ? const Icon(Icons.pause_sharp,
+                      color: themePrimary, size: 40.0)
+                  : const Icon(Icons.play_arrow,
+                      color: themePrimary, size: 40.0),
               onPressed: onPressed,
             ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class PlaylistButton extends StatelessWidget {
+  final IconData icon;
+  final double iconSize;
+  final double radius;
+  final Color color;
+  final Color backgroundColor;
+  final VoidCallback onPressed;
+
+  const PlaylistButton({
+    super.key,
+    required this.icon,
+    required this.iconSize,
+    required this.radius,
+    required this.color,
+    required this.backgroundColor,
+    required this.onPressed,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 8.0),
+      child: GestureDetector(
+        child: CircleAvatar(
+          radius: radius,
+          backgroundColor: backgroundColor,
+          child: IconButton(
+            icon: Icon(
+              icon,
+              color: color,
+              size: iconSize,
+            ),
+            onPressed: onPressed,
           ),
         ),
       ),

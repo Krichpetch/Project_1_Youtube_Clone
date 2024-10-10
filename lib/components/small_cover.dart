@@ -40,7 +40,7 @@ class SmallCover extends StatelessWidget {
           );
         },
         child: SizedBox(
-          width: 105,
+          width: 115,
           child: Column(
             children: [
               Container(
